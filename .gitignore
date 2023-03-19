@@ -25,6 +25,7 @@ fp-info-cache
 *.xml
 *.csv
 
+Gerber/
 *-backups/
 *.kicad_prl
 .DS_Store
