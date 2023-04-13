@@ -1,0 +1,21 @@
+SYSCONFIG CONFIG_IOVOLTAGE=3.3
+          COMPRESS_CONFIG=ON
+          MCCLK_FREQ=62
+          MASTER_SPI_PORT=ENABLE
+          SLAVE_SPI_PORT=DISABLE
+          SLAVE_PARALLEL_PORT=DISABLE;
+
+LOCATE      COMP "osc_clk_in" SITE "P3";
+IOBUF       PORT "osc_clk_in" IO_TYPE=LVCMOS33;
+FREQUENCY   PORT "osc_clk_in" 25 MHZ;
+
+LOCATE      COMP "led_1" SITE "E6";
+IOBUF       PORT "led_1" IO_TYPE=LVCMOS33;
+
+LOCATE      COMP "mux_sel[2]" SITE "C16";
+LOCATE      COMP "mux_sel[1]" SITE "E15";
+LOCATE      COMP "mux_sel[0]" SITE "C13";
+
+IOBUF       PORT "mux_sel[2]" IO_TYPE=LVCMOS33;
+IOBUF       PORT "mux_sel[1]" IO_TYPE=LVCMOS33;
+IOBUF       PORT "mux_sel[0]" IO_TYPE=LVCMOS33;

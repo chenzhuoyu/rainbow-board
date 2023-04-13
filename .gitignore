@@ -29,3 +29,8 @@ Gerber/
 *-backups/
 *.kicad_prl
 .DS_Store
+
+*.bit
+*.config
+*.json
+*.svf
