@@ -6,7 +6,7 @@ module top (
     reg [24:0] ctr;
 
     assign led_1   = ctr[24];
-    assign mux_sel = 3'd0;
+    assign mux_sel = 3'd7;
 
     always @(posedge osc_clk_in) begin
         ctr <= ctr + 1;

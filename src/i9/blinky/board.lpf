@@ -9,7 +9,7 @@ LOCATE      COMP "osc_clk_in" SITE "P3";
 IOBUF       PORT "osc_clk_in" IO_TYPE=LVCMOS33;
 FREQUENCY   PORT "osc_clk_in" 25 MHZ;
 
-LOCATE      COMP "led_1" SITE "E6";
+LOCATE      COMP "led_1" SITE "U2";
 IOBUF       PORT "led_1" IO_TYPE=LVCMOS33;
 
 LOCATE      COMP "mux_sel[2]" SITE "C16";
